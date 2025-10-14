@@ -20,18 +20,18 @@ def update_time():
 # --- Create the main window ---
 root = tk.Tk()
 root.title("Digital Clock")
-root.geometry("800x250") # default size
+root.geometry("1000x700") # default size
 root.configure(bg='black') # black background for a classic clock look
-root.resizable(False, False) # Making the window not resizable
+root.resizable(True, True) # Making the window not resizable
 
 # --- Create Labels to display time and date ---
 time_label = tk.Label(
     root,
-    font=('terminal', 150, 'bold'),
+    font=('terminal', 140, 'bold'),
     background='black',
     foreground='cyan'
 )
-time_label.pack(anchor='center', pady=(10, 0))
+time_label.pack(anchor='center', pady=(280, 40))
 
 date_label = tk.Label(
     root,
